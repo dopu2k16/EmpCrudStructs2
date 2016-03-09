@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts> 
+<package name="default" extends="struts-default">  
+
+<action name="LoginController" class="controller.LoginController" method="loginAndLogout"> 
+<result name="successLogin">/welcome.jsp</result> 
+<result name="errorLogin">/error.jsp</result> 
+<result name="successLogout">/logout.jsp</result> 
+<result name="errorLogout">/index.jsp</result> 
+</action> 
+
+
+<action name="EmployeeControllerAdd" class="controller.EmployeeController" method="addEmployee"> 
+<result name="addEmployeeSuccess">/addEmployeeSuccess.jsp</result> 
+<result name="addEmployeeError">/addEmployeeError.jsp</result> 
+</action>
+
+<action name="EmployeeControllerUpdate" class="controller.EmployeeController" method="updateEmployee"> 
+<result name="updateEmployeeSuccess">/updateEmployeeSuccess.jsp</result> 
+<result name="updateEmployeeError">/updateEmployeeError.jsp</result> 
+</action>
+
+<action name="EmployeeControllerDelete" class="controller.EmployeeController" method="deleteEmployee"> 
+<result name="deleteEmployeeSuccess">/deleteEmployeeSuccess.jsp</result> 
+<result name="deleteEmployeeError">/deleteEmployeeError.jsp</result> 
+</action>
+
+<action name="EmployeeControllerView" class="controller.EmployeeController" method="viewEmployee"> 
+<result name="viewEmployeeSuccess">/viewEmployeeSuccess.jsp</result> 
+<result name="viewEmployeeError">/viewEmployeeError.jsp</result> 
+</action>
+
+<action name="EmployeeControllerViewAll" class="controller.EmployeeController" method="viewAllEmployee"> 
+<result name="viewAllEmployee">/viewAllEmployee.jsp</result> 
+<result name="viewEmployeeError">/viewEmployeeError.jsp</result> 
+</action>
+</package>
+
+</struts>
